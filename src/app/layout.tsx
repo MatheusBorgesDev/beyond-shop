@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
+import { Header } from "./components/header";
+
 const roboto = Roboto({
   display: "swap",
   weight: ["400", "700"],
@@ -21,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>{children}</body>
+      <body
+        className={`${roboto.className} text-text bg-background antialiased`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
