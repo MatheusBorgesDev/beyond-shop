@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} text-text bg-background antialiased`}
+        className={`${roboto.className} text-text flex min-h-screen flex-col items-center justify-center overflow-y-hidden bg-background antialiased`}
       >
         <Header />
         {children}
