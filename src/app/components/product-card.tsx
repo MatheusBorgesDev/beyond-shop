@@ -8,27 +8,26 @@ interface ProductCardProps {
 
 export function ProductCard({ src, alt }: ProductCardProps) {
   return (
-    <Link href="/product" className="group">
-      <div className="flex w-[42rem] flex-col justify-between rounded-lg bg-red-300 bg-gradient-to-b from-primary to-purple-700 shadow-lg">
-        <div className="flex items-center justify-center">
-          <Image
-            src={src}
-            alt={alt}
-            width={550}
-            height={550}
-            className="transition-transform group-hover:scale-105"
-          />
-        </div>
+    <Link
+      href="/product"
+      className="group relative flex min-w-[42rem] flex-col items-center justify-center overflow-hidden rounded-lg bg-red-300 bg-gradient-to-b from-primary to-purple-700 shadow-lg"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={550}
+        height={550}
+        className="transition-transform group-hover:scale-110"
+      />
 
-        <footer className="m-1 flex items-center justify-between rounded-lg bg-elements p-8">
-          <p className="text-lg font-bold text-text transition-colors group-hover:text-white">
-            Camiseta Beyound The Limits
-          </p>
-          <p className="text-lg font-bold text-secondary transition-colors group-hover:text-secondary-light">
-            R$ 79,90
-          </p>
-        </footer>
-      </div>
+      <footer className="absolute bottom-0 m-1 flex w-[41.5rem] translate-y-[110%] items-center justify-between rounded-lg bg-elements p-8 transition-all group-hover:translate-y-0">
+        <strong className="text-lg font-bold text-text transition-colors hover:text-white">
+          Camiseta Beyound The Limits
+        </strong>
+        <p className="text-xl font-bold text-secondary transition-colors hover:text-secondary-light">
+          R$ 79,90
+        </p>
+      </footer>
     </Link>
   );
 }
