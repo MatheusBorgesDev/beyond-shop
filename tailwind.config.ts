@@ -15,6 +15,8 @@ const config: Config = {
         title: "#e1e1e6",
         primary: "#4E8CDF",
         "primary-light": "#63a4ff",
+        secondary: "#00875F",
+        "secondary-light": "#00B37E",
       },
       fontFamily: {
         sans: "var(--font-roboto)",
