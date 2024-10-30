@@ -10,7 +10,7 @@ export function ProductCard({ src, alt }: ProductCardProps) {
   return (
     <Link
       href="/product"
-      className="group relative flex min-w-[42rem] flex-col items-center justify-center overflow-hidden rounded-lg bg-red-300 bg-gradient-to-b from-primary to-purple-700 shadow-lg"
+      className="group relative flex flex-col items-center justify-center rounded-lg bg-red-300 bg-gradient-to-b from-primary to-purple-700 shadow-lg"
     >
       <Image
         src={src}
@@ -20,7 +20,7 @@ export function ProductCard({ src, alt }: ProductCardProps) {
         className="transition-transform group-hover:scale-110"
       />
 
-      <footer className="absolute bottom-0 m-1 flex w-[41.5rem] translate-y-[110%] items-center justify-between rounded-lg bg-elements p-8 transition-all group-hover:translate-y-0">
+      <footer className="absolute bottom-0 m-1 flex w-[98%] translate-y-[110%] items-center justify-between rounded-lg bg-elements p-8 transition-all group-hover:translate-y-0">
         <strong className="text-lg font-bold text-text transition-colors hover:text-white">
           Camiseta Beyound The Limits
         </strong>
